@@ -25,7 +25,6 @@
         "easing equations",
         "javascript"
     ],
-    "jsfiddle" : "http://jsfiddle.net/zalun/NmudS/embedded/", 
     "homepage": "https://github.com/talitapagani/craftytweener",
     "files": [
         "src/components/Tweener.js"
