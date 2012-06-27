@@ -285,7 +285,7 @@ Crafty.c("Tweener", {
 	/**@
 	* #.addTween
 	* @comp Tweener
-	* @sign public this .tween(Object properties[, String transition[, Number duration[, Function onComplete[, Array onCompleteParams]]]])
+	* @sign public this .addTween(Object properties[, String transition[, Number duration[, Function onComplete[, Array onCompleteParams]]]])
 	* @param properties - Object of 2D properties and what they should animate to
 	* @param transition - Easing effect to be applied to the animation based on Robert Penner's easing equations
 	* @param duration - Duration to animate the properties over (in frames)
