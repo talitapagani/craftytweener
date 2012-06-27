@@ -38,7 +38,7 @@ This method will animate a 2D entities properties over the specified duration. T
 ##Examples
 
 ```javascript
-Crafty.modules({ tweener: 'DEV' }, function () {
+Crafty.modules({ Tweener: 'DEV' }, function () {
     
     // Move an object to 100,100 with bounce transition in 200 frames.
     Crafty.e("2D, Tweener")
