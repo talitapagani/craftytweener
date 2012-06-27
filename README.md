@@ -20,7 +20,7 @@ The available easing transitions are:
 * Bounce ('easeInBounce', 'easeOutBounce', 'easeInOutBounce')
 
 ##Using Tweener
-The CraftyJS Tweener is called by an entity with the method .tween, similar no native Crafty Tween, however the method signature is:
+The CraftyJS Tweener is called by an entity with the method .addTween:
 
 ```javascript
 .addTween(Object properties[, String transition[, Number duration[, Function onComplete[, Array onCompleteParams]]]])
