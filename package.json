@@ -1,0 +1,33 @@
+{
+    "name": "tweener",
+    "version": "0.1",
+    "title": "CraftyTweener",
+    "author": {
+        "name": "Talita Pagani",
+        "url": "https://github.com/talitapagani/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        },
+        {
+            "type": "GPL",
+            "url": "http://www.opensource.org/licenses/gpl-license.php"
+        }
+    ],
+    "description": "A CraftyJS component to animate 2D properties with transitions based on Robert Penner's original easing equations, inspired by Tweener Class for ActionScript/Flash platform. Does not conflict with Crafty's Tween core component.",
+    "keywords": [
+        "tweener",
+        "library",
+        "component",
+        "easing transition",
+        "easing equations",
+        "javascript"
+    ],
+    "jsfiddle" : "http://jsfiddle.net/zalun/NmudS/embedded/", 
+    "homepage": "https://github.com/talitapagani/CraftyTweener",
+    "files": [
+        "src/components/Tweener.js"
+    ]
+}
