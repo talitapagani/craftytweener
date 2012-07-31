@@ -67,10 +67,7 @@ window.onload = function() {
 		
 		// Faz o carregamento de todos os arquivos que descrevem as cenas
 		var scenes = [
-			"src/scenes/start.js?v="+version+"",
-			"src/scenes/main.js?v="+version+"",
-			"src/scenes/gameover.js?v="+version+"",
-			"src/scenes/easing.js?v="+version+""
+			"src/scenes/main.js?v="+version+""
 		];
 		
 		require(scenes, function(){});
