@@ -371,9 +371,9 @@ Crafty.c("Tweener", {
 				this._tw_numProps++;
 			}
 			
-			this._tw_onComplete = onComplete || undefined;
+			this._tw_onComplete = onComplete;
 			
-			this._tw_onCompleteParams = onCompleteParams || undefined;
+			this._tw_onCompleteParams = onCompleteParams;
 		});
 		return this;
 	}
