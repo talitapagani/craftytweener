@@ -1,6 +1,6 @@
 # Tweener for CraftyJS
-A CraftyJS component to animate 2D properties with easing effects, inspired by (Tweener Class for ActionScript/Flash platform)[http://code.google.com/p/tweener/].
-The easing equations are based on (Robert Penner's original easing equations)[http://www.robertpenner.com/easing/], with terms of use properly included on the uncompressed code.
+A CraftyJS component to animate 2D properties with easing effects, inspired by [Tweener Class for ActionScript/Flash platform](http://code.google.com/p/tweener/).
+The easing equations are based on [Robert Penner's original easing equations](http://www.robertpenner.com/easing/), with terms of use properly included on the uncompressed code.
 It doesn't conflict with Crafty's Tween core component.
 
 ***
