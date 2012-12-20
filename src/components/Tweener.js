@@ -380,16 +380,7 @@ Crafty.c("Tweener", {
 });
 
 function tweenerEnterFrame(e) {
-	if (this._tw_numProps <= 0) {
-		if(typeof this._tw_onComplete === 'function') {
-			if(this._tw_onCompleteParams) {
-				this._tw_onComplete.apply(this, this._tw_onCompleteParams);
-			} else {
-				this._tw_onComplete();
-			}
-		}
-		return;
-	}
+	if (this._tw_numProps <= 0) return;
 	
 	var prop, k;
 	/* For each property of the entity, calculate its new value based on the transition equation specified */
@@ -404,6 +395,17 @@ function tweenerEnterFrame(e) {
 				delete this._tw_step[k];
 			}
 			this._tw_numProps--;
+			
+			if (this._tw_numProps <= 0) {
+				if(typeof this._tw_onComplete === 'function') {
+					if(this._tw_onCompleteParams) {
+						this._tw_onComplete.apply(this, this._tw_onCompleteParams);
+					} else {
+						this._tw_onComplete();
+					}
+				}
+				return;
+			}
 		}
 	}
 }
