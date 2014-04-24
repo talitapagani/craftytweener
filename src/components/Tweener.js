@@ -1,6 +1,6 @@
 /*============================================================
 TERMS OF USE - EASING EQUATIONS
-
+a
 Open source under the BSD License. 
 
 Copyright © 2001 Robert Penner
