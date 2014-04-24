@@ -386,10 +386,13 @@ Crafty.c("Tweener", {
 	* This metod will stop and remove all the tweens (and callbacks) that have been added to the entity.
 	*/
 	cancelTweener: function() {
-		while (this._tw_step.length > 0) { this._tw_step.pop(); }
+		if (this._tw_step) {
+			while (this._tw_step.length > 0) { this._tw_step.pop(); }
+		}
 		this._tw_numProps = 0;
 		this._tw_onComplete = undefined;
 		this._tw_onCompleteParams = undefined;
+		return this;
 	}
 });
 
