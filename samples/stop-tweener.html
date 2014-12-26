@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>cancelTweener example</title>
+	
+	<script src="../src/libs/crafty-0.6.2.min.js"></script>
+	<script src="../src/components/Tweener.js"></script>
+	
+	<script>
+	window.onload = function() {
+		var hasTweens = true;
+		
+		Crafty.init(640, 480);
+		Crafty.canvas.init();
+		Crafty.background("#88FF99");
+		
+		Crafty.e("2D, Canvas, Color, Tweener, Mouse")
+				.attr({ x: 150, y: 40, w: 40, h: 40 })
+				.color("#339988")
+				.origin(20, 20)
+				.addTween({ y: 400, rotation: 3600}, 'easeOutBounce', 1000)
+				
+				.bind("Click", function() {
+					if (hasTweens) {
+						hasTweens = false;
+						this.cancelTweener();
+					} else {
+						hasTweens = true;
+						this.addTween({ y: 400, rotation: 3600}, 'easeOutBounce', 1000);
+					}
+				});
+	};
+	</script>
+</head>
+
+<body>
+	<p>cancelTweener() demonstration. Click the cube before the tween stops to completely stop all it's tweens.</p>
+</body>
+</html>
