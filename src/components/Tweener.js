@@ -413,7 +413,7 @@ function tweenerEnterFrame(e) {
 			}
 			this._tw_numProps--;
 			
-			if (this._tw_numProps <= 0) {
+			if (this._tw_numProps === 0) {
 				if(typeof this._tw_onComplete === 'function') {
 					if(this._tw_onCompleteParams) {
 						this._tw_onComplete.apply(this, this._tw_onCompleteParams);
@@ -421,6 +421,7 @@ function tweenerEnterFrame(e) {
 						this._tw_onComplete();
 					}
 				}
+				this.removeComponent("Tweener");
 				return;
 			}
 		}
